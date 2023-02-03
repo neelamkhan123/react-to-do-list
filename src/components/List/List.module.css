@@ -1,0 +1,56 @@
+.section {
+  position: relative;
+}
+
+.section .add {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 3%;
+  left: 45%;
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.section .add:hover {
+  scale: 1.1;
+}
+
+.list {
+  overflow-y: scroll;
+  height: 700px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+}
+
+/* iPhoneX */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .section .add {
+    left: 43.5%;
+    bottom: 0%;
+  }
+}
+
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .section .add {
+    left: 47%;
+    bottom: -20%;
+  }
+
+  .section h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,70 @@
+.list-item {
+  list-style: none;
+  padding: 1rem 0.3rem;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-one {
+  display: flex;
+  align-items: center;
+}
+
+.complete {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.task {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.section-two {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.delete {
+  color: grey;
+  background-color: transparent;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.delete:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* iPhoneX */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  .task {
+    width: 170px;
+    overflow-x: scroll;
+  }
+}
+
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .task {
+    font-size: 1rem;
+  }
+}

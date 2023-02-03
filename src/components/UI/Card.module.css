@@ -1,0 +1,27 @@
+.card {
+  margin: auto;
+  padding: 1rem;
+  height: 800px;
+  width: 600px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(white, rgb(207, 207, 207));
+}
+
+/* iPhoneX */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .card {
+    /* margin: 1rem auto; */
+    height: 780px;
+    width: 350px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .card {
+    /* margin: 2rem auto; */
+    height: 960px;
+    width: 700px;
+  }
+}
